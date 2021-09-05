@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/activity_main.xml" value="0.10277777777777777" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_dynamic_fragment.xml" value="0.24358974358974358" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_first.xml" value="0.33" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_fragment.xml" value="0.24358974358974358" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_intent.xml" value="0.10277777777777777" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_second.xml" value="0.24358974358974358" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_target.xml" value="0.10277777777777777" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/aty_third.xml" value="0.25925925925925924" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/desktop_widget_layout.xml" value="0.2490740740740741" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/desktop_widget_provider.xml" value="0.2490740740740741" />
+        <entry key="..\:/ASpace/AndroidPractice/app/src/main/res/layout/f_dynamic.xml" value="0.24358974358974358" />
         <entry key="..\:/ASpace/AndroidPratise/app/src/main/res/layout/activity_main.xml" value="0.3515625" />
       </map>
     </option>

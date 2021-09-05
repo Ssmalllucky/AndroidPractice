@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ssmalllucky.androidpratise">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ssmalllucky.androidpractice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidPratise">
         <activity
-            android:name=".MainActivity"
+            android:name="com.ssmalllucky.androidpractice.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,6 +22,63 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.ssmalllucky.androidpractice.first.IntentActivity" />
+        <activity android:name="com.ssmalllucky.androidpractice.first.FirstActivity" />
+        <activity
+            android:name="com.ssmalllucky.androidpractice.first.TargetIntentAty"
+            android:exported="true">
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".first.StartingModeActivity" />
+        <activity
+            android:name=".helper.first.StandardAty"
+            android:launchMode="standard" />
+        <activity
+            android:name=".helper.first.SingleTopAty"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".helper.first.SingleTaskAty"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".helper.first.SingleInstanceAty"
+            android:launchMode="singleInstance" />
+
+        <activity android:name=".helper.first.SingleInstancePerTaskAty" />
+        <activity android:name=".second.DynamicFragmentAty" />
+        <activity android:name=".second.FragmentAty" />
+        <activity android:name=".second.SecondActivity" />
+        <activity android:name=".third.ThirdActivity" />
+
+        <receiver
+            android:name=".second.ExampleAppWidgetProvider"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/desktop_widget_provider" />
+        </receiver>
+        <receiver
+            android:name=".receiver.AnoBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="102">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.ssmalllucky.action.CUSTOMIZE_RECEIVER" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.CustomizeBroadcastReceiver"
+            android:exported="true">
+            <intent-filter android:priority="105">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="com.ssmalllucky.action.CUSTOMIZE_RECEIVER" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

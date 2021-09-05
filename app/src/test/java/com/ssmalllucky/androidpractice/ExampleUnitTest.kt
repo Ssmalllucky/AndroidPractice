@@ -1,4 +1,4 @@
-package com.ssmalllucky.androidpratise
+package com.ssmalllucky.androidpractice
 
 import org.junit.Test
 
